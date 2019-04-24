@@ -1,0 +1,114 @@
+html {
+  /*background-color: #E4E9FD;*/
+  background-image: -webkit-linear-gradient(60deg,#c61951  50%, #fccde2 50% );
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  color: #0c084c;
+  padding: 10px;
+}
+
+h2{
+  color:#f54291;
+  padding: 15px;
+}
+
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background:#fff5eb ;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.box1 {
+  max-width: 800px;
+  margin: 60px auto;
+ background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading1 {
+  background-color: #fffde8;
+  text-align: center;
+}
+#heading2 {
+  background-color: #fffde1;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+/*.item:last-child {
+  border-bottom: 0;
+}*/
+
+/*input:checked+p {
+    text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}*/
+
+input[type="checkbox"] {   /* this will make our checkbox in perfect place as we want , not a odd side */
+  margin: 40px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #5e0a0a;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #fccde2;
+  color: black;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {   /* this is very imp to add our movie in the list..it will design the text size, input box related ecerything */
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0  -5px 0  0 #c61951; /* this is also imp ,otherwise we will get a boring border showing input box*/
+
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

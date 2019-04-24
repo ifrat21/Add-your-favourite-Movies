@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>my todolist( get date)</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="box1" id="heading1">
+      <h1> <%= thisDay%> </h1>
+    </div>
+    <div class="box" id = "heading2">
+      <h2> <i>Your Favourite Movie's </i></h2>
+    </div>
+
+    <div class="box">
+
+
+  <%  for(var i=0;i<newListItem.length;i++){ %>    <!-- by this loop our item in not appending side by side  , it is apeending by list for using location or array -->
+ <div class="item">
+
+      <input type="checkbox" >
+     <p><i><%=newListItem[i]%> </i></p>
+ </div>
+
+
+  <%  } %>
+
+  <form class="item" action="/" method="post">
+    <input type="text" name="newItem" placeholder="New-Item" autocomplete="off" >
+    <button type="submit" name="button">+</button>
+  </form>
+    </div>
+
+
+
+
+
+  </body>
+</html>
